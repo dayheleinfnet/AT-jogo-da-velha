@@ -1,0 +1,85 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Silkscreen', cursive;
+  font-size: 21px;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+
+.tic-tac-toe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-infos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tile_row {
+  float: left;
+  width: 52px;
+}
+
+.tile {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: cadetblue;
+  margin: 1px;
+  transition: 0.1s linear;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile:hover {
+  cursor: pointer;
+  background-color: #ff85cc;
+}
+
+.game-messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#restartButton {
+  display: none;
+  background-color: #ff85cc;
+  font-family: 'Raleway', sans-serif !important;
+  border: none;
+  margin-top: 24px;
+  width: 100px;
+  height: 48px;
+  transition: 0.1s linear;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#restartButton:hover {
+  background-color: #f273bd;
+}
+
+#sJogadorDaVez, #winner, .tile {
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+#winMessage, #tiedMessage {
+  display: none;
+  font-family: 'Rubik', sans-serif;
+}

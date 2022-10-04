@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Rubik&family=Silkscreen&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Jogo da Velha</title>
+</head>
+
+<body>
+
+  <header class="game-infos">
+    <h1>Jogo da Velha</h1>
+    <h2>Jogador da vez: <span id="sJogadorDaVez">X</span></h2>
+  </header>
+
+  <main class="tic-tac-toe">
+    <div id="board">
+      <div class="tile_row">
+        <span class="tile" onclick="selectedTile(this)" id="1"></span>
+        <span class="tile" onclick="selectedTile(this)" id="2"></span>
+        <span class="tile" onclick="selectedTile(this)" id="3"></span>
+      </div>
+      <div class="tile_row">
+        <span class="tile" onclick="selectedTile(this)" id="4"></span>
+        <span class="tile" onclick="selectedTile(this)" id="5"></span>
+        <span class="tile" onclick="selectedTile(this)" id="6"></span>
+      </div>
+      <div class="tile_row">
+        <span class="tile" onclick="selectedTile(this)" id="7"></span>
+        <span class="tile" onclick="selectedTile(this)" id="8"></span>
+        <span class="tile" onclick="selectedTile(this)" id="9"></span>
+      </div>
+    </div>
+    <div class="game-messages">
+      <p id="winMessage">Parabéns! O jogador <span id="winner"></span> venceu o jogo :)</p>
+      <p id="tiedMessage">Deu velha! Tente novamente :)</p>
+      <button onclick="resetGame(this)" id="restartButton">Reiniciar</button>
+    </div>
+
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
